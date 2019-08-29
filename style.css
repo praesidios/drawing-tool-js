@@ -1,0 +1,76 @@
+*{
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgb(240, 212, 253);
+  color:white;
+}
+
+header {
+  height: 100px;
+  background: rgb(54, 25, 68);
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+}
+
+header div {
+  width: 160px;
+  display: none;
+}
+
+div input{
+  width: 55px;
+  border: none;
+}
+
+input[placeholder]{
+  text-align: center;
+}
+
+div button{
+  width: 100%;
+  border: none;
+  margin-top: 3px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+
+.createCanvasSection {
+  width: 115px;
+  display: block;
+}
+
+.createLineSection input, .createRectangleSection input, .createBucketleSection input{
+  float: right;
+  margin-right: 1.5px;
+}
+
+
+.createRectangleSection {
+  width: 250px;  
+}
+
+.createBucketleSection {
+  width: 170px;
+}
+
+.colour {
+  width: 110px;
+}
+
+
+
+.wrapper {
+  text-align: center;
+}
+
+canvas {
+  background: white;
+}

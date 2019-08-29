@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Drawing tool </title>
+</head>
+<body>
+  <header>
+    <div class="createCanvasSection">
+      <h4>Create Canvas</h4>
+      <input type="number" class="width" placeholder="width">
+      <input type="number" class="height" placeholder="height">
+      <br>
+      <button class="createCanvas">Create</button>
+      <button class="removeCanvas">Remove</button>
+    </div>
+
+    <div class="createLineSection">
+      <h4>Create Line</h4>
+      <span>from</span>
+      <input type="number" class="fromY" placeholder="Y">
+      <input type="number" class="fromX" placeholder="X">
+      <br>
+      <span>to</span>
+      <input type="number" class="toY" placeholder="Y">
+      <input type="number" class="toX" placeholder="X">
+      <br>
+      <button class="createLine">Create</button>
+    </div>
+
+    <div class="createRectangleSection">
+      <h4>Create Rectangle</h4>
+      <span>upper left corner</span>
+      <input type="number" class="upperLeftCornerY" placeholder="Y">
+      <input type="number" class="upperLeftCornerX" placeholder="X">
+      <br>
+      <span>lower right corner</span>
+      <input type="number" class="lowerRightCornerY" placeholder="Y">
+      <input type="number" class="lowerRightCornerX" placeholder="X">
+      <br>
+      <button class="createRectangle">Create</button>
+    </div>
+
+    <div class="createBucketleSection">
+      <h4>Bucket Fill</h4>
+      <span>fill area</span>
+      <input type="number" class="upperLeftCornerY" placeholder="Y">
+      <input type="number" class="upperLeftCornerX" placeholder="X">
+      <br>
+      <span>colour</span>
+      <input type="text" class="colour" placeholder="char">
+      <br>  
+      <button class="createBucketFill">Create</button>
+    </div>
+
+  </header>
+  <div class="wrapper">
+    <canvas width="0" height="0"></canvas>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
